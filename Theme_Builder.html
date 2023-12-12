@@ -1,0 +1,2798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Link to Bootstrap CSS hosted on a CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="colour/dist/coloris.min.css" />
+
+  <!-----swiper cdn-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Link to custom CSS for styling -->
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="stylesheet" href="CSS/Global.css" />
+  <style>
+
+
+  </style>
+  <title>Haze</title>
+</head>
+
+<body>
+  <main id="main_section theme_builder_main_section">
+    <!------header html start------->
+    <header class="Haze_header">
+      <div class="left_navbar">
+        <div class="logo">
+          <a href="#"> Haze</a>
+        </div>
+        <div class="them_title">Theme 1</div>
+        <button class="them_button">Change</button>
+      </div>
+      <div class="Select_Product_button">
+        <div class="custom-select">
+          <select>
+              <option value="none" selected disabled hidden>
+                Select Product
+              </option>
+              <option value="0">Mug</option>
+              <option value="1">Mug:</option>
+          </select>
+      </div>
+      </div>
+
+      <nav class="nav_bar">
+        <ul class="nav_menu">
+          <li class="nav_list">Help Center</li>
+          <li class="nav_list">Logout</li>
+        </ul>
+      </nav>
+    </header>
+    <!------header html end------->
+
+    <!----------------tab and phone----------------->
+    <div class="phone_tab">
+      <!-----button-->
+      <div id="menu-button" aria-label="Toggle Navigation Menu">
+        <img src="./Image/menu.png" />
+      </div>
+      <!-----button-->
+
+      <!-------nav-container------>
+      <div id="nav-container">
+        <!-----sider baar html start ---->
+        <div class="sider_baar">
+          <div class="sidebar_menu_section">
+            <ul class="sidebar_menu">
+              <li class="sidebar_list" onclick="theme_builder('Customizer_Title_list')">
+                <a href="#">
+                  <span class="sidebar_menu_icon">
+                    <img src="./Image/them/text.svg" />
+                  </span>
+                  <span class="sidebar_menu_name active_list">Customizer Title</span>
+                </a>
+              </li>
+  
+              <li class="sidebar_list" onclick="theme_builder('Layers_Panel_list')">
+                <a href="#">
+                  <span class="sidebar_menu_icon">
+                    <img src="./Image/them/Layers Panel.svg" />
+                  </span>
+  
+                  <span class="sidebar_menu_name">Layers Panel</span>
+                </a>
+              </li>
+  
+              <li class="sidebar_list" onclick="theme_builder('Layers_list')">
+                <a href="#">
+                  <span class="sidebar_menu_icon">
+                    <img src="./Image/them/Layers.svg" />
+                  </span>
+  
+                  <span class="sidebar_menu_name"> Layers</span>
+                </a>
+              </li>
+  
+              <li class="sidebar_list" onclick="theme_builder('Layer_Settings_list')">
+                <a href="#">
+                  <span class="sidebar_menu_icon">
+                    <span class="sidebar_menu_icon">
+                      <img src="./Image/them/Layer Settings.svg" />
+                    </span>
+                  </span>
+                  <span class="sidebar_menu_name"> Layer Settings</span>
+                </a>
+              </li>
+  
+              <li class="sidebar_list" onclick="theme_builder('Thumbnails_Button_list')">
+                <a href="#">
+                  <span class="sidebar_menu_icon">
+                    <span class="sidebar_menu_icon">
+                      <img src="./Image/them/Thumbnails Button.svg" />
+                    </span>
+                  </span>
+                  <span class="sidebar_menu_name"> Thumbnails Button</span>
+                </a>
+              </li>
+  
+              <li class="sidebar_list" onclick="theme_builder('Text_Inpu_Dropdown_list')">
+                <a href="#">
+                  <span class="sidebar_menu_icon">
+                    <span class="sidebar_menu_icon">
+                      <img src="./Image/them/Text Input & Dropdown.svg" />
+                    </span>
+                  </span>
+                  <span class="sidebar_menu_name">Text Input & Dropdown</span>
+                </a>
+              </li>
+  
+              <li class="sidebar_list" onclick="theme_builder('File_Upload_list')">
+                <a href="#">
+                  <span class="sidebar_menu_icon">
+                    <span class="sidebar_menu_icon">
+                      <img src="./Image/them/File Upload.svg" />
+                    </span>
+                  </span>
+                  <span class="sidebar_menu_name">File Upload </span>
+                </a>
+              </li>
+  
+              <li class="sidebar_list" onclick="theme_builder('Print_Ready_list')">
+                <a href="#">
+                  <span class="sidebar_menu_icon">
+                    <span class="sidebar_menu_icon">
+                      <img src="./Image/them/Print Ready.svg" />
+                    </span>
+                  </span>
+                  <span class="sidebar_menu_name">Print Ready</span>
+                </a>
+              </li>
+  
+              <li class="sidebar_list" onclick="theme_builder('Customizer_list')">
+                <a href="#">
+                  <span class="sidebar_menu_icon">
+                    <span class="sidebar_menu_icon">
+                      <img src="./Image/them/Customizer.svg" />
+                    </span>
+                  </span>
+                  <span class="sidebar_menu_name">Customizer</span>
+                </a>
+              </li>
+  
+              <li class="sidebar_list" onclick="theme_builder('Step_Title_list')">
+                <a href="#">
+                  <span class="sidebar_menu_icon">
+                    <span class="sidebar_menu_icon">
+                      <img src="./Image/them/text.svg" />
+                    </span>
+                  </span>
+                  <span class="sidebar_menu_name">Step Title (mobile)</span>
+                </a>
+              </li>
+  
+              <li class="sidebar_list" onclick="theme_builder('Summary_Title_list')">
+                <a href="#">
+                  <span class="sidebar_menu_icon">
+                    <span class="sidebar_menu_icon">
+                      <img src="./Image/them/text.svg" />
+                    </span>
+                  </span>
+                  <span class="sidebar_menu_name">Summary Title</span>
+                </a>
+              </li>
+  
+              <li class="sidebar_list" onclick="theme_builder('Cart_button_list')">
+                <a href="#">
+                  <span class="sidebar_menu_icon">
+                    <span class="sidebar_menu_icon">
+                      <img src="./Image/them/Add To Cart & Buttons.svg" />
+                    </span>
+                  </span>
+                  <span class="sidebar_menu_name">Add To Cart & Buttons</span>
+                </a>
+              </li>
+  
+              <li class="sidebar_list" onclick="theme_builder('Confirm_Button_list')">
+                <a href="#">
+                  <span class="sidebar_menu_icon">
+                    <span class="sidebar_menu_icon">
+                      <img src="./Image/them/Confirm Button (mobile).svg" />
+                    </span>
+                  </span>
+                  <span class="sidebar_menu_name">Confirm Button (mobile)</span>
+                </a>
+              </li>
+              <li class="sidebar_list" onclick="theme_builder('Price_list')">
+                <a href="#">
+                  <span class="sidebar_menu_icon">
+                    <span class="sidebar_menu_icon">
+                      <img src="./Image/them/Price.svg" />
+                    </span>
+                  </span>
+                  <span class="sidebar_menu_name">Price</span>
+                </a>
+              </li>
+  
+              <li class="sidebar_list" onclick="theme_builder('Switch_View_Arrows_list')">
+                <a href="#">
+                  <span class="sidebar_menu_icon">
+                    <span class="sidebar_menu_icon">
+                      <img src="./Image/them/Price.svg" />
+                    </span>
+                  </span>
+                  <span class="sidebar_menu_name">Switch View Arrows </span>
+                </a>
+              </li>
+  
+              <li class="sidebar_list" onclick="theme_builder('Switch_View_Dots_list')">
+                <a href="#">
+                  <span class="sidebar_menu_icon">
+                    <span class="sidebar_menu_icon">
+                      <img src="./Image/them/Price.svg" />
+                    </span>
+                  </span>
+                  <span class="sidebar_menu_name">Switch View Dots</span>
+                </a>
+              </li>
+  
+              <li class="sidebar_list" onclick="theme_builder('Zoom_list')">
+                <a href="#">
+                  <span class="sidebar_menu_icon">
+                    <span class="sidebar_menu_icon">
+                      <img src="./Image/them/Price.svg" />
+                    </span>
+                  </span>
+                  <span class="sidebar_menu_name">Zoom</span>
+                </a>
+              </li>
+  
+              <li class="sidebar_list" onclick="theme_builder('Share_Button_list')">
+                <a href="#">
+                  <span class="sidebar_menu_icon">
+                    <span class="sidebar_menu_icon">
+                      <img src="./Image/them/Price.svg" />
+                    </span>
+                  </span>
+                  <span class="sidebar_menu_name">Share Button</span>
+                </a>
+              </li>
+  
+              <li class="sidebar_list" onclick="theme_builder('Description_list')">
+                <a href="#">
+                  <span class="sidebar_menu_icon">
+                    <span class="sidebar_menu_icon">
+                      <img src="./Image/them/Price.svg" />
+                    </span>
+                  </span>
+                  <span class="sidebar_menu_name">Description</span>
+                </a>
+              </li>
+  
+  
+              <li class="sidebar_list" onclick="theme_builder('Out_of_Stock_list')">
+                <a href="#">
+                  <span class="sidebar_menu_icon">
+                    <span class="sidebar_menu_icon">
+                      <img src="./Image/them/Price.svg" />
+                    </span>
+                  </span>
+                  <span class="sidebar_menu_name">Out of Stock</span>
+                </a>
+              </li>
+  
+            </ul>
+          </div>
+        </div>
+        <!-----sider baar html start ---->
+      </div>
+      <!-------nav-container------>
+    </div>
+    <!------------tab and phone------------>
+
+    <section class="wrapper_section theme_builder_wrapper_section">
+      <!-----sider baar html start ---->
+      <div class="sider_baar">
+        <!----desktop-->
+        <div class="sidebar_menu_section">
+          <ul class="sidebar_menu">
+            <li class="sidebar_list" onclick="theme_builder('Customizer_Title_list')">
+              <a href="#">
+                <span class="sidebar_menu_icon">
+                  <img src="./Image/them/text.svg" />
+                </span>
+                <span class="sidebar_menu_name active_list">Customizer Title</span>
+              </a>
+            </li>
+
+            <li class="sidebar_list" onclick="theme_builder('Layers_Panel_list')">
+              <a href="#">
+                <span class="sidebar_menu_icon">
+                  <img src="./Image/them/Layers Panel.svg" />
+                </span>
+
+                <span class="sidebar_menu_name">Layers Panel</span>
+              </a>
+            </li>
+
+            <li class="sidebar_list" onclick="theme_builder('Layers_list')">
+              <a href="#">
+                <span class="sidebar_menu_icon">
+                  <img src="./Image/them/Layers.svg" />
+                </span>
+
+                <span class="sidebar_menu_name"> Layers</span>
+              </a>
+            </li>
+
+            <li class="sidebar_list" onclick="theme_builder('Layer_Settings_list')">
+              <a href="#">
+                <span class="sidebar_menu_icon">
+                  <span class="sidebar_menu_icon">
+                    <img src="./Image/them/Layer Settings.svg" />
+                  </span>
+                </span>
+                <span class="sidebar_menu_name"> Layer Settings</span>
+              </a>
+            </li>
+
+            <li class="sidebar_list" onclick="theme_builder('Thumbnails_Button_list')">
+              <a href="#">
+                <span class="sidebar_menu_icon">
+                  <span class="sidebar_menu_icon">
+                    <img src="./Image/them/Thumbnails Button.svg" />
+                  </span>
+                </span>
+                <span class="sidebar_menu_name"> Thumbnails Button</span>
+              </a>
+            </li>
+
+            <li class="sidebar_list" onclick="theme_builder('Text_Inpu_Dropdown_list')">
+              <a href="#">
+                <span class="sidebar_menu_icon">
+                  <span class="sidebar_menu_icon">
+                    <img src="./Image/them/Text Input & Dropdown.svg" />
+                  </span>
+                </span>
+                <span class="sidebar_menu_name">Text Input & Dropdown</span>
+              </a>
+            </li>
+
+            <li class="sidebar_list" onclick="theme_builder('File_Upload_list')">
+              <a href="#">
+                <span class="sidebar_menu_icon">
+                  <span class="sidebar_menu_icon">
+                    <img src="./Image/them/File Upload.svg" />
+                  </span>
+                </span>
+                <span class="sidebar_menu_name">File Upload </span>
+              </a>
+            </li>
+
+            <li class="sidebar_list" onclick="theme_builder('Print_Ready_list')">
+              <a href="#">
+                <span class="sidebar_menu_icon">
+                  <span class="sidebar_menu_icon">
+                    <img src="./Image/them/Print Ready.svg" />
+                  </span>
+                </span>
+                <span class="sidebar_menu_name">Print Ready</span>
+              </a>
+            </li>
+
+            <li class="sidebar_list" onclick="theme_builder('Customizer_list')">
+              <a href="#">
+                <span class="sidebar_menu_icon">
+                  <span class="sidebar_menu_icon">
+                    <img src="./Image/them/Customizer.svg" />
+                  </span>
+                </span>
+                <span class="sidebar_menu_name">Customizer</span>
+              </a>
+            </li>
+
+            <li class="sidebar_list" onclick="theme_builder('Step_Title_list')">
+              <a href="#">
+                <span class="sidebar_menu_icon">
+                  <span class="sidebar_menu_icon">
+                    <img src="./Image/them/text.svg" />
+                  </span>
+                </span>
+                <span class="sidebar_menu_name">Step Title (mobile)</span>
+              </a>
+            </li>
+
+            <li class="sidebar_list" onclick="theme_builder('Summary_Title_list')">
+              <a href="#">
+                <span class="sidebar_menu_icon">
+                  <span class="sidebar_menu_icon">
+                    <img src="./Image/them/text.svg" />
+                  </span>
+                </span>
+                <span class="sidebar_menu_name">Summary Title</span>
+              </a>
+            </li>
+
+            <li class="sidebar_list" onclick="theme_builder('Cart_button_list')">
+              <a href="#">
+                <span class="sidebar_menu_icon">
+                  <span class="sidebar_menu_icon">
+                    <img src="./Image/them/Add To Cart & Buttons.svg" />
+                  </span>
+                </span>
+                <span class="sidebar_menu_name">Add To Cart & Buttons</span>
+              </a>
+            </li>
+
+            <li class="sidebar_list" onclick="theme_builder('Confirm_Button_list')">
+              <a href="#">
+                <span class="sidebar_menu_icon">
+                  <span class="sidebar_menu_icon">
+                    <img src="./Image/them/Confirm Button (mobile).svg" />
+                  </span>
+                </span>
+                <span class="sidebar_menu_name">Confirm Button (mobile)</span>
+              </a>
+            </li>
+            <li class="sidebar_list" onclick="theme_builder('Price_list')">
+              <a href="#">
+                <span class="sidebar_menu_icon">
+                  <span class="sidebar_menu_icon">
+                    <img src="./Image/them/Confirm Button (mobile).svg" />
+                  </span>
+                </span>
+                <span class="sidebar_menu_name">Price</span>
+              </a>
+            </li>
+
+            <li class="sidebar_list" onclick="theme_builder('Switch_View_Arrows_list')">
+              <a href="#">
+                <span class="sidebar_menu_icon">
+                  <span class="sidebar_menu_icon">
+                    <img src="./Image/them/Price.svg" />
+                  </span>
+                </span>
+                <span class="sidebar_menu_name">Switch View Arrows </span>
+              </a>
+            </li>
+
+            <li class="sidebar_list" onclick="theme_builder('Switch_View_Dots_list')">
+              <a href="#">
+                <span class="sidebar_menu_icon">
+                  <span class="sidebar_menu_icon">
+                    <img src="./Image/them/Price.svg" />
+                  </span>
+                </span>
+                <span class="sidebar_menu_name">Switch View Dots</span>
+              </a>
+            </li>
+
+            <li class="sidebar_list" onclick="theme_builder('Zoom_list')">
+              <a href="#">
+                <span class="sidebar_menu_icon">
+                  <span class="sidebar_menu_icon">
+                    <img src="./Image/them/Price.svg" />
+                  </span>
+                </span>
+                <span class="sidebar_menu_name">Zoom</span>
+              </a>
+            </li>
+
+            <li class="sidebar_list" onclick="theme_builder('Share_Button_list')">
+              <a href="#">
+                <span class="sidebar_menu_icon">
+                  <span class="sidebar_menu_icon">
+                    <img src="./Image/them/Price.svg" />
+                  </span>
+                </span>
+                <span class="sidebar_menu_name">Share Button</span>
+              </a>
+            </li>
+
+            <li class="sidebar_list" onclick="theme_builder('Description_list')">
+              <a href="#">
+                <span class="sidebar_menu_icon">
+                  <span class="sidebar_menu_icon">
+                    <img src="./Image/them/Price.svg" />
+                  </span>
+                </span>
+                <span class="sidebar_menu_name">Description</span>
+              </a>
+            </li>
+
+
+            <li class="sidebar_list" onclick="theme_builder('Out_of_Stock_list')">
+              <a href="#">
+                <span class="sidebar_menu_icon">
+                  <span class="sidebar_menu_icon">
+                    <img src="./Image/them/Price.svg" />
+                  </span>
+                </span>
+                <span class="sidebar_menu_name">Out of Stock</span>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+        <!---desktop-->
+      </div>
+      <!-----sider baar html start ---->
+      <!-----center_wrapper html start ---->
+      <div class="center_wrapper">
+        <div class="products_wrapper">
+          <div class="products_col">
+            <div class="products_wrapper_tile">Product 1</div>
+            <div class="products_wrapper_row">
+              <div class="products_wrapper_col">
+                <div class="products_wrapper_tag">Mug</div>
+                <div class="products-active products_wrapper_image">
+                  <img src="./Image/product/Mug .svg" />
+                </div>
+              </div>
+            </div>
+            <div class="products_wrapper_row">
+              <div class="products_wrapper_col">
+                <div class="products_wrapper_tag">Mug Colour</div>
+                <div class="products_colour_section">
+                  <span class="products-active"></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="products_wrapper_row">
+              <div class="products_wrapper_col">
+                <div class="products_wrapper_tag">Handle</div>
+                <div class="products-active products_wrapper_image">
+                  <img src="./Image/product/Mug handle.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="products_col">
+            <div class="products_top_section">
+              <div class="products_top_section_row">
+                <div class="products_amount">
+                  <span class="currency_symbol">$</span><span class="currency_value">24</span>
+                </div>
+                <div class="products_button">
+                  <button class="products_zomm_button">
+                    <i class="bi bi-zoom-in"></i>
+                  </button>
+                  <button class="share_button">
+                    <i class="bi bi-share"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="products_slid">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="swiper-zoom-container">
+                      <img src="./Image/product/Mug handle 1.svg" />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-zoom-container">
+                      <img src="./Image/product/Mug handle 1.svg" />
+                    </div>
+                  </div>
+                </div>
+                <div class="products_button_swiper products_button-next"></div>
+                <div class="products_button_swiper products-button-prev"></div>
+                <div class="profucts-pagination"></div>
+              </div>
+            </div>
+            <div class="products_add_button">
+              <button class="add_button">
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!----center_wrapper html end ---->
+
+      <!----right_wrapper html end ---->
+      <div class="right_wrapper">
+        <!----Customizer Titl html start-->
+        <div class="right_wrapper_conntaine" id="Customizer_Title_list">
+          <div class="right_wrapper_title">
+            Customizer Title
+          </div>
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Background colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #fff;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right_wrapper_row">
+
+            <div class="right_property_name">
+              Font
+            </div>
+            <div class="custom-select">
+              <select>
+                <option value="none" selected disabled hidden>Select
+                  an Option</option>
+                <option value="0">Poppins</option>
+                <option value="1">rubik:</option>
+              </select>
+            </div>
+          </div>
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Font size
+              </div>
+              <div class="right_property_value">
+                <input type="text" class="right_wrapper_input" id="name">
+              </div>
+            </div>
+          </div>
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Font size (mobile)
+              </div>
+              <div class="right_property_value">
+                <input type="text" class="right_wrapper_input" id="name">
+              </div>
+            </div>
+          </div>
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Font colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #2D2D2D;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Font colour (mobile)
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #2D2D2D;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Divider colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #2D2D2D;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Divider thickness
+              </div>
+              <div class="right_property_value">
+                <input type="text" class="right_wrapper_input" id="name">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!----Layers Panel html start-->
+        <div class="right_wrapper_conntaine" id="Layers_Panel_list">
+          <div class="right_wrapper_title">
+            Layers Panel
+          </div>
+
+          <div class="right_wrapper_row">
+
+            <div class="right_property_name">
+              Panel Position
+            </div>
+            <div class="custom-select">
+              <select>
+                <option value="none" selected disabled hidden>Left</option>
+                <option value="0">left</option>
+                <option value="1">right:</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Background colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #F9F6EF;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Border colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #F9F6EF;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Border thickness
+              </div>
+              <div class="right_property_value">
+                <input type="text" class="right_wrapper_input" id="name">
+              </div>
+            </div>
+          </div>
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Error colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #D7554F"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!----Layers Panel html end-->
+        <!----Layers  html startd-->
+        <div class="right_wrapper_conntaine" id="Layers_list">
+          <div class="right_wrapper_title">
+            Layers
+          </div>
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Font colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #2D2D2D;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Font size
+              </div>
+              <div class="right_property_value">
+                <input type="text" class="right_wrapper_input" id="name">
+              </div>
+            </div>
+          </div>
+
+          <div class="right_wrapper_row">
+
+            <div class="right_property_name">
+              Font family
+            </div>
+            <div class="custom-select">
+              <select>
+                <option value="none" selected disabled hidden>Poppins</option>
+                <option value="0">Poppins</option>
+                <option value="1">rubik</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Description font colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #2D2D2D;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Description font size
+              </div>
+              <div class="right_property_value">
+                <input type="text" class="right_wrapper_input" id="name">
+              </div>
+            </div>
+          </div>
+
+          <div class="right_wrapper_row">
+
+            <div class="right_property_name">
+              Description font family
+            </div>
+            <div class="custom-select">
+              <select>
+                <option value="none" selected disabled hidden>Poppins</option>
+                <option value="0">Poppins</option>
+                <option value="1">rubik</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Divider colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #9C9C9C;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Divider thickness
+              </div>
+              <div class="right_property_value">
+                <input type="text" class="right_wrapper_input" id="name">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!----Layers  html end-->
+        <!----Layers settings  html start-->
+        <div class="right_wrapper_conntaine" id="Layer_Settings_list">
+          <div class="right_wrapper_title">
+            Layer Settings
+          </div>
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Border colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #9C9C9C;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Selected border colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: var(  --colour-gradient);">
+                      <button aria-label="Open Color Picker"></button>
+                      <input type="text" class="coloris"  aria-labelledby="clr-open-label">
+                    </div>
+                    
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Border thickness
+              </div>
+              <div class="right_property_value">
+                <input type="text" class="right_wrapper_input" id="name">
+              </div>
+            </div>
+          </div>
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Selected border
+                thickness
+              </div>
+              <div class="right_property_value">
+                <input type="text" class="right_wrapper_input" id="name">
+              </div>
+            </div>
+          </div>
+
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Font colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #2D2D2D;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Font size
+              </div>
+              <div class="right_property_value">
+                <input type="text" class="right_wrapper_input" id="name">
+              </div>
+            </div>
+          </div>
+
+          <div class="right_wrapper_row">
+
+            <div class="right_property_name">
+              Font family
+            </div>
+            <div class="custom-select">
+              <select>
+                <option value="none" selected disabled hidden>Poppins</option>
+                <option value="0">Poppins</option>
+                <option value="1">rubik</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Pop-up background colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #2D2D2D;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Pop-up background
+                rounding
+              </div>
+              <div class="right_property_value">
+                <input type="text" class="right_wrapper_input" id="name">
+              </div>
+            </div>
+          </div>
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Description font colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #2D2D2D;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Description font size
+              </div>
+              <div class="right_property_value">
+                <input type="text" class="right_wrapper_input" id="name">
+              </div>
+            </div>
+          </div>
+
+          <div class="right_wrapper_row">
+
+            <div class="right_property_name">
+              Description font family
+            </div>
+            <div class="custom-select">
+              <select>
+                <option value="none" selected disabled hidden>Poppins</option>
+                <option value="0">Poppins</option>
+                <option value="1">rubik</option>
+              </select>
+            </div>
+          </div>
+
+        </div>
+        <!----Layers settings  html end-->
+        <!----Thumbnails button html start-->
+        <div class="right_wrapper_conntaine" id="Thumbnails_Button_list">
+          <div class="right_wrapper_title">
+            Thumbnails Button
+          </div>
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Thumbnails_Button_list
+              </div>
+              <div class="right_property_value">
+                <input type="text" class="right_wrapper_input" id="name">
+              </div>
+            </div>
+          </div>
+
+          <div class="right_wrapper_row">
+
+            <div class="right_property_name">
+              Column
+            </div>
+            <div class="custom-select">
+              <select>
+                <option value="none" selected disabled hidden>1</option>
+                <option value="0">1</option>
+                <option value="1">2</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Width
+              </div>
+              <div class="right_property_value">
+                <input type="text" class="right_wrapper_input" id="name">
+              </div>
+            </div>
+          </div>
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Height
+              </div>
+              <div class="right_property_value">
+                <input type="text" class="right_wrapper_input" id="name">
+              </div>
+            </div>
+          </div>
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Vertical margin
+              </div>
+              <div class="right_property_value">
+                <input type="text" class="right_wrapper_input" id="name">
+              </div>
+            </div>
+          </div>
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Thumbnail
+                rounding (mobile)
+              </div>
+              <div class="right_property_value">
+                <input type="text" class="right_wrapper_input" id="name">
+              </div>
+            </div>
+          </div>
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Thumbnail
+                rounding (mobile)
+              </div>
+              <div class="right_property_value">
+                <input type="text" class="right_wrapper_input" id="name">
+              </div>
+            </div>
+          </div>
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Width (mobile)
+              </div>
+              <div class="right_property_value">
+                <input type="text" class="right_wrapper_input" id="name">
+              </div>
+            </div>
+          </div>
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Height (mobile)
+              </div>
+              <div class="right_property_value">
+                <input type="text" class="right_wrapper_input" id="name">
+              </div>
+            </div>
+          </div>
+
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Margin (mobile)
+              </div>
+              <div class="right_property_value">
+                <input type="text" class="right_wrapper_input" id="name">
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <!----Thumbnails button end start-->
+
+        <!----Text Input & Dropdown html start-->
+        <div class="right_wrapper_conntaine" id="Text_Inpu_Dropdown_list">
+          <div class="right_wrapper_title">
+            Text Input & Dropdown
+          </div>
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Background colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #2D2D2D;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Height
+              </div>
+              <div class="right_property_value">
+                <input type="text" class="right_wrapper_input" id="name">
+              </div>
+            </div>
+          </div>
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Roundings
+              </div>
+              <div class="right_property_value">
+                <input type="text" class="right_wrapper_input" id="name">
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Border colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #2D2D2D;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="right_wrapper_row">
+
+            <div class="right_property_name">
+              Font family
+            </div>
+            <div class="custom-select">
+              <select>
+                <option value="none" selected disabled hidden>Poppins</option>
+                <option value="0">Poppins</option>
+                <option value="1">rubik</option>
+              </select>
+            </div>
+          </div>
+
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Font colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #2D2D2D;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Font size
+              </div>
+              <div class="right_property_value">
+                <input type="text" class="right_wrapper_input" id="name">
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Dropdown menu
+                background colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #2D2D2D;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Dropdown hovered
+                options colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #2D2D2D;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Dropdown selected
+                option colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #2D2D2D;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Dropdown menu
+                font colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #2D2D2D;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+        <!----Text Input & Dropdown end start-->
+
+        <!----File Upload html start-->
+        <div class="right_wrapper_conntaine" id="File_Upload_list">
+          <div class="right_wrapper_title">
+            File Upload
+          </div>
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Background colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #D9D9D9;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Border colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #D9D9D9;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Roundings
+              </div>
+              <div class="right_property_value">
+                <input type="text" class="right_wrapper_input" id="name">
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Font colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #2D2D2D;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Font colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #2D2D2D;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Link colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color:#147FE2;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Font size
+              </div>
+              <div class="right_property_value">
+                <input type="text" class="right_wrapper_input" id="name">
+              </div>
+            </div>
+          </div>
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Image rounding
+              </div>
+              <div class="right_property_value">
+                <input type="text" class="right_wrapper_input" id="name">
+              </div>
+            </div>
+          </div>
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Remove options
+                background colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #D9D9D9;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Remove options hover
+                background colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #2D2D2D;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Remove options
+                icon colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #D9D9D9;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <!----File Upload end start-->
+
+        <!----Print Ready html start-->
+        <div class="right_wrapper_conntaine" id="Print_Ready_list">
+          <div class="right_wrapper_title">
+            Print Ready
+          </div>
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Edition colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #6043EB;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Edition icon colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #D9D9D9;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                DPI indicator text
+                colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #2D2D2D;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                DPI low quality colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #A84A41;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Low quality message
+                background colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #F8D4D3;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Low quality message
+                text colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #2D2D2D;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                DPI high quality colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #56AD38;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!----Print Ready end start-->
+
+        <!----Customizer html start-->
+        <div class="right_wrapper_conntaine" id="Customizer_list">
+          <div class="right_wrapper_title">
+            Customizer
+          </div>
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Loading icon colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #2D2D2D;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Background colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #56AD38;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!----Customizer end start-->
+
+        <!----Step Title (mobile) html start-->
+        <div class="right_wrapper_conntaine" id="Step_Title_list">
+          <div class="right_wrapper_title">
+            Step Title (mobile)
+          </div>
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Background colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #D9D9D9;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Switch Step Arrows
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #737373;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!----Step Title (mobile) end start-->
+
+        <!----Summary Title html start-->
+        <div class="right_wrapper_conntaine" id="Summary_Title_list">
+          <div class="right_wrapper_title">
+            Summary Title
+          </div>
+
+
+          <div class="right_wrapper_row">
+
+            <div class="right_property_name">
+              Font family
+            </div>
+            <div class="custom-select">
+              <select>
+                <option value="none" selected disabled hidden>Poppins</option>
+                <option value="0">Poppins</option>
+                <option value="1">Poppins</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+               Font colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #737373;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Font size
+              </div>
+              <div class="right_property_value">
+                <input type="text" class="right_wrapper_input" id="name">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!----Summary Titleend start-->
+
+        <!----Add To Cart & Buttons html start-->
+        <div class="right_wrapper_conntaine" id="Cart_button_list">
+          <div class="right_wrapper_title">
+            Add To Cart & Buttons
+          </div>
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Border colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #D9D9D9;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Border thickness
+              </div>
+              <div class="right_property_value">
+                <input type="text" class="right_wrapper_input" id="name">
+              </div>
+            </div>
+          </div>
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Rounding
+              </div>
+              <div class="right_property_value">
+                <input type="text" class="right_wrapper_input" id="name">
+              </div>
+            </div>
+          </div>
+
+
+          <div class="right_wrapper_row">
+
+            <div class="right_property_name">
+              Font family
+            </div>
+            <div class="custom-select">
+              <select>
+                <option value="none" selected disabled hidden>Poppins</option>
+                <option value="0">Poppins</option>
+                <option value="1">Poppins:</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Font colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #D9D9D9;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Background colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #2D2D2D;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Hover Background 
+                colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #2D2D2D;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+        
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Font size
+              </div>
+              <div class="right_property_value">
+                <input type="text" class="right_wrapper_input" id="name">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!----Add To Cart & Buttons end -->
+
+        <!----Confirm Button (mobile) html start-->
+        <div class="right_wrapper_conntaine" id="Confirm_Button_list">
+          <div class="right_wrapper_title">
+            Confirm Button (mobile)
+          </div>
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Font colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #D9D9D9;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Background colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #2D2D2D;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!----Confirm Button (mobile) end -->
+
+        <!----Price html start-->
+        <div class="right_wrapper_conntaine" id="Price_list">
+          <div class="right_wrapper_title">
+            Price
+          </div>
+       
+
+          <div class="right_wrapper_row">
+
+            <div class="right_property_name">
+              Price position
+            </div>
+            <div class="custom-select">
+              <select>
+                <option value="none" selected disabled hidden>Center</option>
+                <option value="0">Center</option>
+                <option value="1">Center</option>
+              </select>
+            </div>
+          </div>
+
+
+          <div class="right_wrapper_row">
+
+            <div class="right_property_name">
+              Price font
+            </div>
+            <div class="custom-select">
+              <select>
+                <option value="none" selected disabled hidden>Poppins</option>
+                <option value="0">Poppins</option>
+                <option value="1">Poppins</option>
+              </select>
+            </div>
+          </div>
+
+        
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Font size
+              </div>
+              <div class="right_property_value">
+                <input type="text" class="right_wrapper_input" id="name">
+              </div>
+            </div>
+          </div>
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Font size (mobile)
+              </div>
+              <div class="right_property_value">
+                <input type="text" class="right_wrapper_input" id="name">
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Font colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #9C9C9C;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Show extra price
+              </div>
+              <div class="right_property_value">
+                <div class="switch_button_row">
+                  <label class="printing_methods_switch_button">
+                    <input type="checkbox" checked>
+                    <span
+                      class="printing_methods_switch_slider printing_methods_switch_round"></span>
+
+                  </label>
+                 
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Extra price font colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #D9D9D9;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Extra price border colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #737373;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="right_wrapper_row">
+            <div class="right_wrapper_col">
+              <div class="right_property_name">
+                Extra price background
+                colour
+              </div>
+              <div class="right_property_value">
+                <div class="deom_color">
+                  <div class="example full">
+                    <div class="clr-field" style="color: #2D2D2D;"><button aria-labelledby="clr-open-label"></button>
+                      <input type="text" class="coloris" value="#ffd21af">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!----Price end -->
+
+          <!----Switch View Arrows html start-->
+          <div class="right_wrapper_conntaine" id="Switch_View_Arrows_list">
+            <div class="right_wrapper_title">
+              Switch View Arrows
+            </div>
+            <div class="right_wrapper_row">
+              <div class="right_wrapper_col">
+                <div class="right_property_name">
+                  colour
+                </div>
+                <div class="right_property_value">
+                  <div class="deom_color">
+                    <div class="example full">
+                      <div class="clr-field" style="color: #2D2D2D;"><button aria-labelledby="clr-open-label"></button>
+                        <input type="text" class="coloris" value="#ffd21af">
+                      </div>
+                    </div>
+  
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+          
+  
+          </div>
+          <!----Switch View Arrows end -->
+
+          <!----Switch View Dots html start-->
+          <div class="right_wrapper_conntaine" id="Switch_View_Dots_list">
+            <div class="right_wrapper_title">
+              Switch View Arrows
+            </div>
+            <div class="right_wrapper_row">
+              <div class="right_wrapper_col">
+                <div class="right_property_name">
+                  colour
+                </div>
+                <div class="right_property_value">
+                  <div class="deom_color">
+                    <div class="example full">
+                      <div class="clr-field" style="color: #D9D9D9;"><button aria-labelledby="clr-open-label"></button>
+                        <input type="text" class="coloris" value="#ffd21af">
+                      </div>
+                    </div>
+  
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+            <div class="right_wrapper_row">
+              <div class="right_wrapper_col">
+                <div class="right_property_name">
+                  Select colour
+                </div>
+                <div class="right_property_value">
+                  <div class="deom_color">
+                    <div class="example full">
+                      <div class="clr-field" style="color: #737373;"><button aria-labelledby="clr-open-label"></button>
+                        <input type="text" class="coloris" value="#ffd21af">
+                      </div>
+                    </div>
+  
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+          
+  
+          </div>
+          <!----Switch View Dots end -->
+
+           <!----Zoom html start-->
+           <div class="right_wrapper_conntaine" id="Zoom_list">
+            <div class="right_wrapper_title">
+              Zoom
+            </div>
+            <div class="right_wrapper_row">
+              <div class="right_wrapper_col">
+                <div class="right_property_name">
+                  colour
+                </div>
+                <div class="right_property_value">
+                  <div class="deom_color">
+                    <div class="example full">
+                      <div class="clr-field" style="color: #2D2D2D;"><button aria-labelledby="clr-open-label"></button>
+                        <input type="text" class="coloris" value="#ffd21af">
+                      </div>
+                    </div>
+  
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+       
+          
+  
+          </div>
+          <!----Zoom end -->
+
+           <!----Share Button html start-->
+              <div class="right_wrapper_conntaine" id="Share_Button_list">
+                <div class="right_wrapper_title">
+                  Share Button
+                </div>
+
+                <div class="right_wrapper_row">
+                  <div class="right_wrapper_col">
+                    <div class="right_property_name">
+                      Show extra price
+                    </div>
+                    <div class="right_property_value">
+                      <div class="switch_button_row">
+                        <label class="printing_methods_switch_button">
+                          <input type="checkbox" checked>
+                          <span
+                            class="printing_methods_switch_slider printing_methods_switch_round"></span>
+      
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="right_wrapper_row">
+                  <div class="right_wrapper_col">
+                    <div class="right_property_name">
+                      Show extra price
+                    </div>
+                    <div class="right_property_value">
+                      <label class="theme_check_button">
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="right_wrapper_row">
+                  <div class="right_wrapper_col">
+                    <div class="right_property_name">
+                      Show extra price
+                    </div>
+                    <div class="right_property_value">
+                      <label class="theme_check_button">
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+
+                <div class="right_wrapper_row">
+                  <div class="right_wrapper_col">
+                    <div class="right_property_name">
+                      colour
+                    </div>
+                    <div class="right_property_value">
+                      <div class="deom_color">
+                        <div class="example full">
+                          <div class="clr-field" style="color: #2D2D2D;"><button aria-labelledby="clr-open-label"></button>
+                            <input type="text" class="coloris" value="#ffd21af">
+                          </div>
+                        </div>
+      
+                      </div>
+      
+                    </div>
+                  </div>
+                </div>
+                <div class="right_wrapper_row">
+                  <div class="right_wrapper_col">
+                    <div class="right_property_name">
+                      Text button
+                      rounding
+                    </div>
+                    <div class="right_property_value">
+                      <input type="text" class="right_wrapper_input" id="name">
+                    </div>
+                  </div>
+                </div>
+      
+
+                <div class="right_wrapper_row">
+
+                  <div class="right_property_name">
+                    Text button length
+                  </div>
+                  <div class="custom-select">
+                    <select>
+                      <option value="none" selected disabled hidden>Small</option>
+                      <option value="0">Small</option>
+                      <option value="1">Small</option>
+                    </select>
+                  </div>
+                </div>
+           
+              
+      
+              </div>
+              <!----Share Button end -->
+
+              <!----Description html start-->
+              <div class="right_wrapper_conntaine" id="Description_list">
+                <div class="right_wrapper_title">
+                Description (mobile)
+                </div>
+                <div class="right_wrapper_row">
+                  <div class="right_wrapper_col">
+                    <div class="right_property_name">
+                      colour
+                    </div>
+                    <div class="right_property_value">
+                      <div class="deom_color">
+                        <div class="example full">
+                          <div class="clr-field" style="color: #2D2D2D;"><button aria-labelledby="clr-open-label"></button>
+                            <input type="text" class="coloris" value="#ffd21af">
+                          </div>
+                        </div>
+      
+                      </div>
+      
+                    </div>
+                  </div>
+                </div>
+
+                <div class="right_wrapper_row">
+                  <div class="right_wrapper_col">
+                    <div class="right_property_name">
+                      Background colour
+                    </div>
+                    <div class="right_property_value">
+                      <div class="deom_color">
+                        <div class="example full">
+                          <div class="clr-field" style="color: #D9D9D9;"><button aria-labelledby="clr-open-label"></button>
+                            <input type="text" class="coloris" value="#ffd21af">
+                          </div>
+                        </div>
+      
+                      </div>
+      
+                    </div>
+                  </div>
+                </div>
+
+                <div class="right_wrapper_row">
+
+                  <div class="right_property_name">
+                    Font
+                  </div>
+                  <div class="custom-select">
+                    <select>
+                      <option value="none" selected disabled hidden>Poppins</option>
+                      <option value="0">Poppins</option>
+                      <option value="1">Poppins</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="right_wrapper_row">
+                  <div class="right_wrapper_col">
+                    <div class="right_property_name">
+                      Font size
+                    </div>
+                    <div class="right_property_value">
+                      <input type="text" class="right_wrapper_input" id="name">
+                    </div>
+                  </div>
+                </div>
+      
+
+         
+           
+              
+      
+              </div>
+              <!----Description end -->
+
+                <!----Out of Stock html start-->
+              <div class="right_wrapper_conntaine" id="Out_of_Stock_list">
+                <div class="right_wrapper_title">
+                  Out of Stock
+                </div>
+                <div class="right_wrapper_row">
+                  <div class="right_wrapper_col">
+                    <div class="right_property_name">
+                      Badge icon colour
+                    </div>
+                    <div class="right_property_value">
+                      <div class="deom_color">
+                        <div class="example full">
+                          <div class="clr-field" style="color: #2D2D2D;"><button aria-labelledby="clr-open-label"></button>
+                            <input type="text" class="coloris" value="#ffd21af">
+                          </div>
+                        </div>
+      
+                      </div>
+      
+                    </div>
+                  </div>
+                </div>
+
+                <div class="right_wrapper_row">
+                  <div class="right_wrapper_col">
+                    <div class="right_property_name">
+                      Badge background
+                      colour
+                    </div>
+                    <div class="right_property_value">
+                      <div class="deom_color">
+                        <div class="example full">
+                          <div class="clr-field" style="color: #D9D9D9;"><button aria-labelledby="clr-open-label"></button>
+                            <input type="text" class="coloris" value="#ffd21af">
+                          </div>
+                        </div>
+      
+                      </div>
+      
+                    </div>
+                  </div>
+                </div>
+
+             
+                <div class="right_wrapper_row">
+                  <div class="right_wrapper_col">
+                    <div class="right_property_name">
+                      Badge border width
+                    </div>
+                    <div class="right_property_value">
+                      <input type="text" class="right_wrapper_input" id="name">
+                    </div>
+                  </div>
+                </div>
+      
+
+                <div class="right_wrapper_row">
+                  <div class="right_wrapper_col">
+                    <div class="right_property_name">
+                      Badge border colour
+                    </div>
+                    <div class="right_property_value">
+                      <div class="deom_color">
+                        <div class="example full">
+                          <div class="clr-field" style="color: #737373;"><button aria-labelledby="clr-open-label"></button>
+                            <input type="text" class="coloris" value="#ffd21af">
+                          </div>
+                        </div>
+      
+                      </div>
+      
+                    </div>
+                  </div>
+                </div>
+                <div class="right_wrapper_row">
+                  <div class="right_wrapper_col">
+                    <div class="right_property_name">
+                      Banner text colour
+                    </div>
+                    <div class="right_property_value">
+                      <div class="deom_color">
+                        <div class="example full">
+                          <div class="clr-field" style="color: #2D2D2D;"><button aria-labelledby="clr-open-label"></button>
+                            <input type="text" class="coloris" value="#ffd21af">
+                          </div>
+                        </div>
+      
+                      </div>
+      
+                    </div>
+                  </div>
+                </div>
+                <div class="right_wrapper_row">
+                  <div class="right_wrapper_col">
+                    <div class="right_property_name">
+                      Banner background
+                      colour
+                    </div>
+                   
+                    <div class="right_property_value">
+                      <div class="deom_color">
+                        <div class="example full">
+                          <div class="clr-field" style="color: #D9D9D9;"><button aria-labelledby="clr-open-label"></button>
+                            <input type="text" class="coloris" value="#ffd21af">
+                          </div>
+                        </div>
+      
+                      </div>
+      
+                    </div>
+                  </div>
+                </div>
+           
+              
+      
+              </div>
+              <!----Out of Stock end -->
+
+
+
+
+      </div>
+
+      <!----right_wrapper html end ---->
+
+    </section>
+  </main>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Include Popper.js library -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+  <!-- Include Bootstrap JavaScript library -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
+  <!-- Include custom  JavaScript  -->
+  <script src="JS/navbar.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".profucts-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".products_button-next",
+        prevEl: ".products-button-prev",
+      },
+    });
+  </script>
+
+  <script type="text/javascript" src="colour/dist/coloris.min.js"></script>
+
+  <script src="./JS/custom_select.js"></script>
+  <script type="text/javascript">
+
+
+    Coloris({
+      el: '.coloris',
+      swatches: [
+        '#264653',
+        '#2a9d8f',
+        '#e9c46a',
+        '#f4a261',
+        '#e76f51',
+        '#d62828',
+        '#023e8a',
+        '#0077b6',
+        '#0096c7',
+        '#00b4d8',
+        '#48cae4',
+      ]
+    });
+
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      let storedDivId = sessionStorage.getItem("currentVisibleDivId");
+      let currentVisibleDivId = storedDivId || "Customizer_Title_list";
+      theme_builder(currentVisibleDivId);
+    });
+
+    const theme_builder = (divId) => {
+      let currentDiv = document.getElementById(divId);
+      if (currentDiv.style.display === "block") {
+        return;
+      }
+
+      currentDiv.style.display = "block";
+
+      ["Customizer_Title_list", "Layers_Panel_list", "Layers_list", "Layer_Settings_list", "Thumbnails_Button_list", "Text_Inpu_Dropdown_list", "File_Upload_list", "Print_Ready_list", "Customizer_list", "Step_Title_list", "Summary_Title_list", "Cart_button_list", "Confirm_Button_list", "Price_list","Switch_View_Arrows_list","Switch_View_Dots_list","Zoom_list","Share_Button_list","Description_list","Out_of_Stock_list",]
+        .filter((id) => id !== divId)
+        .forEach((id) => {
+          document.getElementById(id).style.display = "none";
+        });
+
+      sessionStorage.setItem("currentVisibleDivId", divId);
+    };
+
+
+
+    const hideDiv = (divId) => {
+      let currentDiv = document.getElementById(divId);
+      currentDiv.style.display = "none";
+
+      // Remove the 'active' class from the clicked seting_list element
+      document.querySelector(`.seting_list[onclick="showDiv('${divId}')]`).classList.remove("active");
+    };
+
+  </script>
+</body>
+
+</html>

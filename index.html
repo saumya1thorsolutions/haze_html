@@ -10,6 +10,14 @@
             rel="stylesheet"
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous" />
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+            integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK"
+            crossorigin="anonymous">
 
         <link rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
@@ -21,6 +29,7 @@
 
         <!-- Link to custom CSS for styling -->
         <link rel="stylesheet" href="CSS/style.css" />
+        <link rel="stylesheet" href="CSS/Global.css"/>
 
         <title>Haze</title>
     </head>
@@ -41,12 +50,142 @@
                 </nav>
 
             </header>
+            <!------header html end------->
 
-            <!------header html start------->
+            <!----------------tab and phone----------------->
+            <div class="phone_tab">
+
+                <!-----button-->
+                <div id="menu-button" aria-label="Toggle Navigation Menu">
+                    <img src="./Image/menu.png">
+                </div>
+                <!-----button-->
+
+                <!-------nav-container------>
+                <div id="nav-container">
+
+                    <!-----sider baar html start ---->
+                    <div class="sider_baar">
+
+                        <div class="sidebar_menu_section">
+
+                            <ul class="sidebar_menu">
+
+                                <li class="sidebar_list ">
+                                    <a href="#">
+                                        <span class="sidebar_menu_icon">
+                                            <img src="./Image/home.svg">
+                                        </span>
+                                        <span
+                                            class="sidebar_menu_name active_list">Home</span>
+                                    </a>
+                                </li>
+
+                                <li class="sidebar_list">
+                                    <a href="#">
+
+                                        <span class="sidebar_menu_icon">
+                                            <img src="./Image/My Products.svg">
+                                        </span>
+
+                                        <span class="sidebar_menu_name">My
+                                            Products</span>
+                                    </a>
+                                </li>
+
+                                <li class="sidebar_list">
+                                    <a href="#">
+
+                                        <span class="sidebar_menu_icon">
+                                            <img
+                                                src="./Image/Printing Methods.svg">
+                                        </span>
+
+                                        <span class="sidebar_menu_name">Printing
+                                            Methods</span>
+                                    </a>
+                                </li>
+
+                                <li class="sidebar_list">
+                                    <a href="#">
+                                        <span class="sidebar_menu_icon">
+
+                                            <span class="sidebar_menu_icon">
+                                                <img
+                                                    src="./Image/Pricing Rules.svg">
+                                            </span>
+
+                                        </span>
+                                        <span class="sidebar_menu_name">Pricing
+                                            Rules</span>
+                                    </a>
+                                </li>
+
+                                <li class="sidebar_list">
+                                    <a href="#">
+                                        <span class="sidebar_menu_icon">
+                                            <span class="sidebar_menu_icon">
+                                                <img
+                                                    src="./Image/Theme Builder.svg">
+                                            </span>
+                                        </span>
+                                        <span class="sidebar_menu_name">Theme
+                                            Builder</span>
+                                    </a>
+                                </li>
+
+                                <li class="sidebar_list">
+                                    <a href="#">
+                                        <span class="sidebar_menu_icon">
+                                            <span class="sidebar_menu_icon">
+                                                <img src="./Image/Orders.svg">
+                                            </span>
+                                        </span>
+                                        <span class="sidebar_menu_name">Orders</span>
+                                    </a>
+                                </li>
+
+                                <li class="sidebar_list">
+                                    <a href="#">
+                                        <span class="sidebar_menu_icon">
+                                            <span class="sidebar_menu_icon">
+                                                <img
+                                                    src="./Image/Saved Designs.svg">
+                                            </span>
+                                        </span>
+                                        <span class="sidebar_menu_name">Saved
+                                            Designs</span>
+                                    </a>
+                                </li>
+
+                                <li class="sidebar_list">
+                                    <a href="#">
+                                        <span class="sidebar_menu_icon">
+                                            <span class="sidebar_menu_icon">
+                                                <img src="./Image/Settings.svg">
+                                            </span>
+                                        </span>
+                                        <span class="sidebar_menu_name">Settings</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                    <!-----sider baar html start ---->
+
+                </div>
+                <!-------nav-container------>
+
+            </div>
+            <!------------tab and phone------------>
+
             <section class="wrapper_section">
 
                 <!-----sider baar html start ---->
                 <div class="sider_baar">
+                    <!----desktop-->
                     <div class="sidebar_menu_section">
                         <ul class="sidebar_menu">
                             <li class="sidebar_list ">
@@ -143,6 +282,7 @@
                         </ul>
 
                     </div>
+                    <!---desktop-->
 
                 </div>
                 <!-----sider baar html start ---->
@@ -223,7 +363,7 @@
 
                             <div class="home_section_row">
                                 <div class="home_data_left_col">
-                               </div>
+                                </div>
                                 <div class="home_data_right_col">
                                     <div class="home_data_col_header">
                                         <span class="home_data_icon">
@@ -236,9 +376,8 @@
                                         25
                                     </div>
                                 </div>
-    
+
                             </div>
-                            
 
                         </div>
 
@@ -246,6 +385,9 @@
                 </div>
             </section>
         </main>
+
+       
+      
 
         <!-- Include Popper.js library -->
         <script

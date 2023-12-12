@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Link to Bootstrap CSS hosted on a CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+        <!-- Link to Font Awesome CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous" />
+
+        <!-- Link to custom CSS for styling -->
+        <link rel="stylesheet" href="CSS/style.css" />
+        <link rel="stylesheet" href="CSS/Global.css" />
+        <link rel="stylesheet" type="text/css" href="colour/dist/coloris.min.css" />
+
+        <title>Haze</title>
+    </head>
+
+    <body>
+        <main id="main_section">
+            <!-- Header HTML -->
+            <header class="Haze_header">
+                <div class="logo">
+                    <a href="#">Haze</a>
+                </div>
+                <nav class="nav_bar">
+                    <ul class="nav_menu">
+                        <li class="nav_list">Help Center</li>
+                        <li class="nav_list">Logout</li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- Phone and Tab Section -->
+            <div class="phone_tab">
+                <!-- Menu Button -->
+                <div id="menu-button" aria-label="Toggle Navigation Menu">
+                    <img src="./Image/menu.png" alt="Menu Icon" />
+                </div>
+
+                <!-- Navigation Container -->
+                <div id="nav-container">
+                    <!-- Sidebar HTML -->
+                    <div class="sider_baar">
+                        <div class="sidebar_menu_section">
+                            <ul class="sidebar_menu">
+                                <li class="sidebar_list">
+                                    <a href="#">
+                                        <span class="sidebar_menu_icon">
+                                            <img src="./Image/Settings.svg" alt="Settings Icon" />
+                                        </span>
+                                        <span class="sidebar_menu_name">Settings</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wrapper Section -->
+            <section class="wrapper_section">
+                <!-- Desktop Sidebar HTML -->
+                <div class="sider_baar">
+                    <div class="sidebar_menu_section">
+                        <ul class="sidebar_menu">
+                            <li class="sidebar_list">
+                                <a href="#">
+                                    <span class="sidebar_menu_icon">
+                                        <img src="./Image/Settings.svg" alt="Settings Icon" />
+                                    </span>
+                                    <span class="sidebar_menu_name">Settings</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="seting_menu">
+                            <li class="seting_list" onclick="showDiv('General')">
+                                General
+                                <img src="./Image/seting_list_icon.svg" alt="Settings Icon" />
+                            </li>
+                            <li class="seting_list" onclick="showDiv('Business_details')">
+                                Business details
+                                <img src="./Image/seting_list_icon.svg" alt="Settings Icon" />
+                            </li>
+                            <li class="seting_list" onclick="showDiv('Brand')">Brand<img src="./Image/seting_list_icon.svg" alt="Settings Icon" /></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!---left wrapper-->
+                <div class="left_wrapper setting_wrapper">
+                    <!----main_container-->
+                    <div class="main_container">
+                        <!---setting_section-->
+                        <div class="setting_section">
+                            <!---setting row-->
+                            <div class="seting_row">
+                                <!--setting menu list start-->
+                                <div class="seettin_section_col">
+                                    <div class="seteing_section_list_section">
+                                        <!-- General_menu start -->
+                                        <div class="General_menu hiddenDiv" id="General" style="display: block;">
+                                            <ul class="seteing_list General_ul_list" id="General_list">
+                                                <li class="seteing_item General_li_item">
+                                                    Order Summary
+                                                </li>
+                                                <li class="seteing_item General_li_item">
+                                                    KPI Dashboard
+                                                </li>
+                                                <li class="seteing_item General_li_item">
+                                                    Print-ready files
+                                                </li>
+                                                <li class="seteing_item General_li_item">
+                                                    PDF Preview
+                                                </li>
+                                                <li class="seteing_item General_li_item">
+                                                    Pantone Colours
+                                                </li>
+                                                <li class="seteing_item General_li_item">
+                                                    Messages & Alerts
+                                                </li>
+                                                <li class="seteing_item General_li_item">
+                                                    Bulk Variations
+                                                </li>
+                                                <li class="seteing_item General_li_item">
+                                                    Translations
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- General_menu start -->
+
+                                        <!-- business details start -->
+                                        <div class="Business_details_menu hiddenDiv" id="Business_details">
+                                            <ul class="seteing_list Business_details_ul_list" id="Business_details_list">
+                                                <li class="seteing_item Business_details_li_item">
+                                                    Multi Currency
+                                                </li>
+                                                <li class="seteing_item Business_details_li_item">
+                                                    Customizer Intergrations
+                                                </li>
+                                                <li class="seteing_item Business_details_li_item">
+                                                    Sales Channel
+                                                </li>
+                                                <li class="seteing_item Business_details_li_item">
+                                                    Bad Words
+                                                </li>
+                                                <li class="seteing_item Business_details_li_item">
+                                                    Translations
+                                                </li>
+                                                <li class="seteing_item Business_details_li_item">
+                                                    Users
+                                                </li>
+                                                <li class="seteing_item Business_details_li_item">
+                                                    Billing & Subscription
+                                                </li>
+                                                <li class="seteing_item Business_details_li_item">
+                                                    API Keys
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- business details end -->
+
+                                        <!-- Brand start -->
+                                        <div class="Brand_menu hiddenDiv" id="Brand">
+                                            <ul class="seteing_list Brand_ul_list" id="Brand_list">
+                                                <li class="seteing_item Brand_li_item" onclick="showinerDiv('logo')">
+                                                    Logo
+                                                </li>
+                                                <li class="seteing_item Brand_li_item" onclick="showinerDiv('Colour')">
+                                                    Colour
+                                                </li>
+                                                <li class="seteing_item Brand_li_item" onclick="showinerDiv('Font')">
+                                                    Font
+                                                </li>
+                                                <li class="seteing_item Brand_li_item" onclick="showinerDiv('Button')">
+                                                    Button
+                                                </li>
+                                                <li class="seteing_item Brand_li_item" onclick="showinerDiv('Social_media_links')">
+                                                    Social media links
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- Brand start -->
+                                    </div>
+                                </div>
+                                <!--setting menu list end-->
+
+                                <!--setting menu inner list start-->
+                                <div class="seettin_section_col">
+                                    <!----inner_menu-->
+                                    <div class="inner_menu">
+                                        <!------brand inner menu start-------->
+                                        <div class="brand_inner_menu">
+                                            <!----Logo-->
+                                            <div class="logo_menu hiddenDiv" id="logo" style="display: block;">
+                                                <div class="seteing_list logo_ul_list" id="logo_list">
+                                                    <div class="list_inner_col">
+                                                        <div class="list_inner_col_title">Logo</div>
+                                                        <div class="list_inner_content">
+                                                            <div class="logo_section">
+                                                                <div class="logo_row">
+                                                                    <div class="logo_card">
+                                                                        <div class="logo_top_body">
+                                                                            <div class="logo_image">
+                                                                                <img src="./Image/logo_img.svg" />
+                                                                            </div>
+                                                                            <div class="logo_right_section">
+                                                                                <div class="logo_tilte">
+                                                                                    Add a default logo
+                                                                                </div>
+                                                                                <div class="logo_tag">
+                                                                                    Used for most common logo applications
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="logo_description">
+                                                                            HEIC, PNG or JPG. Recommended width 512 px minimum
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="logo_row">
+                                                                    <div class="logo_card">
+                                                                        <div class="logo_top_body">
+                                                                            <div class="logo_image">
+                                                                                <img src="./Image/logo_img.svg" />
+                                                                            </div>
+                                                                            <div class="logo_right_section">
+                                                                                <div class="logo_tilte">
+                                                                                    Add a default logo
+                                                                                </div>
+                                                                                <div class="logo_tag">
+                                                                                    Used for most common logo applications
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="logo_description">
+                                                                            HEIC, PNG or JPG. Recommended width 512 px minimum
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!----LOGO-->
+                                            <!----Colour-->
+                                            <div class="Colour_menu hiddenDiv" id="Colour" style="display: block;">
+                                                <div class="seteing_list logo_ul_list" id="logo_list">
+                                                    <div class="list_inner_col">
+                                                        <div class="list_inner_col_title">Colour</div>
+                                                        <div class="list_inner_content">
+                                                            <div class="colour_section">
+                                                                <div class="colour_section_row">
+                                                                    <div class="colour_name">Primary colour</div>
+                                                                    <div class="colour_input_section">
+                                                                        <input type="text" value="#FFFFFF" data-coloris />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="colour_section_row">
+                                                                    <div class="colour_name">Primary colour</div>
+                                                                    <div class="colour_input_section">
+                                                                        <input type="text" value="#9C9C9C" data-coloris />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="colour_section_row">
+                                                                    <div class="colour_name">Primary colour</div>
+                                                                    <div class="colour_input_section">
+                                                                        <input type="text" value="#9C9C9C" data-coloris />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!----Colour-->
+                                            <!----Font-->
+                                            <div class="Colour_menu hiddenDiv" id="Font" style="display: block;">
+                                                <div class="seteing_list logo_ul_list" id="logo_list">
+                                                    <div class="list_inner_col">
+                                                        <div class="list_inner_col_title">Font</div>
+                                                        <div class="list_inner_content">
+                                                            <div class="font_section">
+                                                                <div class="font_setion_row">
+                                                                    <div class="font_name">Primary font</div>
+                                                                    <div class="custom-select">
+                                                                        <select>
+                                                                            <option value="none" selected disabled hidden>
+                                                                                Select an Option
+                                                                            </option>
+                                                                            <option value="0">Poppins</option>
+                                                                            <option value="1">Rubik:</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="font_setion_row">
+                                                                    <div class="font_name colour_name">
+                                                                        Primary font
+                                                                    </div>
+                                                                    <div class="custom-select">
+                                                                        <select>
+                                                                            <option value="none" selected disabled hidden>
+                                                                                Select an Option
+                                                                            </option>
+                                                                            <option value="0">Poppins</option>
+                                                                            <option value="1">Rubik:</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="colour_section_row">
+                                                                    <div class="colour_name colour_name">
+                                                                        Primary colour
+                                                                    </div>
+                                                                    <div class="colour_input_section">
+                                                                        <input type="text" value="#FFFFFF" data-coloris />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="colour_section_row">
+                                                                    <div class="colour_name">Primary colour</div>
+                                                                    <div class="colour_input_section">
+                                                                        <input type="text" value="#9C9C9C" data-coloris />
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="colour_section_row">
+                                                                    <div class="colour_name">
+                                                                        Primary Font size
+                                                                    </div>
+                                                                    <div class="colour_input_section font_size_select">
+                                                                        <input type="text" value="16 px" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="colour_section_row">
+                                                                    <div class="colour_name">
+                                                                        Primary Font size
+                                                                    </div>
+                                                                    <div class="colour_input_section font_size_select">
+                                                                        <input type="text" value="16 px" />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!----font-->
+                                            <!---button-->
+                                            <div class="Colour_menu hiddenDiv" id="Button" style="display: block;">
+                                                <div class="seteing_list logo_ul_list" id="logo_list">
+                                                    <div class="list_inner_col">
+                                                        <div class="list_inner_col_title">Button</div>
+                                                        <div class="list_inner_content button_section">
+                                                            <ul class="General_ul_list">
+                                                                <li class="seteing_item General_li_item" onclick="button_menu('Primary_button')">
+                                                                    Primary button
+                                                                </li>
+                                                                <li class="seteing_item General_li_item" onclick="button_menu('Secondary_Button')">
+                                                                    Secondary button
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!----button-->
+
+                                            <!---link-->
+                                            <div class="Colour_menu hiddenDiv" id="Social_media_links" style="display: block;">
+                                                <div class="seteing_list logo_ul_list" id="logo_list">
+                                                    <div class="list_inner_col">
+                                                        <div class="list_inner_col_title">Social media links</div>
+                                                        <div class="list_inner_content Social_media_links_section">
+                                                            <div class="Social_media_section_row">
+                                                                <div class="colour_name">Facebook</div>
+                                                                <div class="colour_input_section">
+                                                                    <input type="text" placeholder="Copy link here"/>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="Social_media_section_row">
+                                                                <div class="colour_name">Instagram</div>
+                                                                <div class="colour_input_section">
+                                                                    <input type="text" placeholder="Copy link here"/>
+                                                                </div>
+                                                            </div>
+                                                            <div class="Social_media_section_row">
+                                                                <div class="colour_name">Twitter</div>
+                                                                <div class="colour_input_section">
+                                                                    <input type="text" placeholder="Copy link here"/>
+                                                                </div>
+                                                            </div>
+                                                            <div class="Social_media_section_row">
+                                                                <div class="colour_name">Linkedin</div>
+                                                                <div class="colour_input_section">
+                                                                    <input type="text" placeholder="Copy link here"/>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!---link-->
+                                        </div>
+                                        <!------brand inner menu start-------->
+                                    </div>
+                                    <!----inner_menu-->
+                                </div>
+                                <!--setting menu inner list end-->
+
+                                <!----inner  sub menu start-->
+                                <div class="seettin_section_col">
+                                    <!----inner_menu-->
+                                    <div class="inner_sub_menu">
+                                        <div class="button_sub_menu">
+                                            <div class="seteing_list logo_ul_list" id="Primary_button">
+                                                <div class="list_inner_col" id="">
+                                                    <div class="list_inner_col_title">Primary button</div>
+                                                    <div class="list_inner_content">
+                                                        <div class="font_section">
+                                                            <div class="font_setion_row">
+                                                                <div class="font_name">Primary font</div>
+                                                                <div class="custom-select">
+                                                                    <select>
+                                                                        <option value="none" selected disabled hidden>
+                                                                            Select an Option
+                                                                        </option>
+                                                                        <option value="0">Poppins</option>
+                                                                        <option value="1">Rubik:</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                         
+
+                                                            <div class="colour_section_row">
+                                                                <div class="colour_name colour_name">
+                                                                    Primary button
+                                                                    background  colour
+                                                                </div>
+                                                                <div class="colour_input_section">
+                                                                    <input type="text" value="#FFFFFF" data-coloris />
+                                                                </div>
+                                                            </div>
+                                                            <div class="colour_section_row">
+                                                                <div class="colour_name">Primary button
+                                                                    background  colour</div>
+                                                                <div class="colour_input_section">
+                                                                    <input type="text" value="#9C9C9C" data-coloris />
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="colour_section_row">
+                                                                <div class="colour_name">Primary Font size</div>
+                                                                <div class="colour_input_section font_size_select">
+                                                                    <input type="text" value="16 px" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="colour_section_row">
+                                                                <div class="colour_name">Primary Font size</div>
+                                                                <div class="colour_input_section font_size_select">
+                                                                    <input type="text" value="16 px" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="seteing_list logo_ul_list" id="Secondary_Button">
+                                                <div class="list_inner_col" id="">
+                                                    <div class="list_inner_col_title">Secondary Button</div>
+                                                    <div class="list_inner_content">
+                                                        <div class="font_section">
+                                                            <div class="font_setion_row">
+                                                                <div class="font_name">Primary font</div>
+                                                                <div class="custom-select">
+                                                                    <select>
+                                                                        <option value="none" selected disabled hidden>
+                                                                            Select an Option
+                                                                        </option>
+                                                                        <option value="0">Poppins</option>
+                                                                        <option value="1">Rubik:</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div class="colour_section_row">
+                                                                <div class="colour_name colour_name">
+                                                                    Secondary button
+                                                                    background  colour
+                                                                </div>
+                                                                <div class="colour_input_section">
+                                                                    <input type="text" value="#FFFFFF" data-coloris />
+                                                                </div>
+                                                            </div>
+                                                            <div class="colour_section_row">
+                                                                <div class="colour_name">Secondary button 
+                                                                    text colour</div>
+                                                                <div class="colour_input_section">
+                                                                    <input type="text" value="#9C9C9C" data-coloris />
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="colour_section_row">
+                                                                <div class="colour_name">Secondary button font size</div>
+                                                                <div class="colour_input_section font_size_select">
+                                                                    <input type="text" value="16 px" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="colour_section_row">
+                                                                <div class="colour_name">PSecondary button rounding</div>
+                                                                <div class="colour_input_section font_size_select">
+                                                                    <input type="text" value="16 px" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!----inner menu sub menu end-->
+                            </div>
+                            <!---seting row-->
+                        </div>
+                        <!---seting_section-->
+                    </div>
+                    <!----main_container-->
+                </div>
+                <!---left wrapper-->
+            </section>
+        </main>
+
+        <!-- Include Popper.js library -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+        <!-- Include Bootstrap JavaScript library -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+        <!-- Include custom JavaScript -->
+        <script src="JS/navbar.js"></script>
+      
+
+
+<script type="text/javascript" src="colour/dist/coloris.min.js"></script>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+  let storedDivId = sessionStorage.getItem("currentVisibleDivId");
+  let currentVisibleDivId = storedDivId || "General";
+  showDiv(currentVisibleDivId);
+});
+
+const showDiv = (divId) => {
+  let currentDiv = document.getElementById(divId);
+  if (currentDiv.style.display === "block") {
+      return;
+  }
+
+  currentDiv.style.display = "block";
+
+  ["General", "Business_details", "Brand"]
+      .filter((id) => id !== divId)
+      .forEach((id) => {
+          document.getElementById(id).style.display = "none";
+      });
+
+  sessionStorage.setItem("currentVisibleDivId", divId);
+};
+
+
+const showinerDiv = (divId) => {
+  let currentDiv = document.getElementById(divId);
+  if (currentDiv.style.display === "block") {
+      hideDiv(divId);
+      return;
+  }
+
+  currentDiv.style.display = "block";
+
+  ["logo", "Colour", "Font", "Button","Social_media_links"]
+      .filter((id) => id !== divId)
+      .forEach((id) => {
+          document.getElementById(id).style.display = "none";
+      });
+
+  sessionStorage.setItem("currentVisibleDivId", divId);
+
+  // Add the 'active' class to the clicked seting_list element
+  document.querySelector(`.seting_list[onclick="showinerDiv('${divId}')]`).classList.add("active");
+
+  // Remove the 'active' class from all seting_list elements
+  document.querySelectorAll(".seting_list").forEach((element) => {
+      element.classList.remove("active");
+  });
+};
+
+const button_menu = (divId) => {
+  let currentDiv = document.getElementById(divId);
+  if (currentDiv.style.display === "block") {
+      hideDiv(divId);
+      return;
+  }
+
+  currentDiv.style.display = "block";
+
+  ["Primary_button", "Secondary_Button"]
+      .filter((id) => id !== divId)
+      .forEach((id) => {
+          document.getElementById(id).style.display = "none";
+      });
+
+  sessionStorage.setItem("currentVisibleDivId", divId);
+
+  // Add the 'active' class to the clicked seting_list element
+  document.querySelector(`.seting_list[onclick="showinerDiv('${divId}')]`).classList.add("active");
+
+  // Remove the 'active' class from all seting_list elements
+  document.querySelectorAll(".seting_list").forEach((element) => {
+      element.classList.remove("active");
+  });
+};
+
+
+const hideDiv = (divId) => {
+  let currentDiv = document.getElementById(divId);
+  currentDiv.style.display = "none";
+
+  // Remove the 'active' class from the clicked seting_list element
+  document.querySelector(`.seting_list[onclick="showDiv('${divId}')]`).classList.remove("active");
+};
+
+</script>
+</script>
+<script type="text/javascript">
+/** Default configuration **/
+
+Coloris({
+  el: ".coloris",
+  swatches: ["#264653", "#2a9d8f", "#e9c46a", "#f4a261", "#e76f51", "#d62828", "#023e8a", "#0077b6", "#0096c7", "#00b4d8", "#48cae4"],
+});
+
+/** Instances **/
+
+Coloris.setInstance(".instance1", {
+  theme: "pill",
+  themeMode: "dark",
+  formatToggle: true,
+  closeButton: true,
+  clearButton: true,
+  swatches: ["#067bc2", "#84bcda", "#80e377", "#ecc30b", "#f37748", "#d56062"],
+});
+
+Coloris.setInstance(".instance2", { theme: "polaroid" });
+
+Coloris.setInstance(".instance3", {
+  theme: "polaroid",
+  swatchesOnly: true,
+});
+        </script>
+
+        <script>
+            var x, i, j, l, ll, selElmnt, a, b, c;
+            /*look for any elements with the class "custom-select":*/
+            x = document.getElementsByClassName("custom-select");
+            l = x.length;
+            for (i = 0; i < l; i++) {
+                selElmnt = x[i].getElementsByTagName("select")[0];
+                ll = selElmnt.length;
+                /*for each element, create a new DIV that will act as the selected item:*/
+                a = document.createElement("DIV");
+                a.setAttribute("class", "select-selected");
+                a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+                x[i].appendChild(a);
+                /*for each element, create a new DIV that will contain the option list:*/
+                b = document.createElement("DIV");
+                b.setAttribute("class", "select-items select-hide");
+                for (j = 1; j < ll; j++) {
+                    /*for each option in the original select element,
+                create a new DIV that will act as an option item:*/
+                    c = document.createElement("DIV");
+                    c.innerHTML = selElmnt.options[j].innerHTML;
+                    c.addEventListener("click", function (e) {
+                        /*when an item is clicked, update the original select box,
+                    and the selected item:*/
+                        var y, i, k, s, h, sl, yl;
+                        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                        sl = s.length;
+                        h = this.parentNode.previousSibling;
+                        for (i = 0; i < sl; i++) {
+                            if (s.options[i].innerHTML == this.innerHTML) {
+                                s.selectedIndex = i;
+                                h.innerHTML = this.innerHTML;
+                                y = this.parentNode.getElementsByClassName("same-as-selected");
+                                yl = y.length;
+                                for (k = 0; k < yl; k++) {
+                                    y[k].removeAttribute("class");
+                                }
+                                this.setAttribute("class", "same-as-selected");
+                                break;
+                            }
+                        }
+                        h.click();
+                    });
+                    b.appendChild(c);
+                }
+                x[i].appendChild(b);
+                a.addEventListener("click", function (e) {
+                    /*when the select box is clicked, close any other select boxes,
+                and open/close the current select box:*/
+                    e.stopPropagation();
+                    closeAllSelect(this);
+                    this.nextSibling.classList.toggle("select-hide");
+                    this.classList.toggle("select-arrow-active");
+                });
+            }
+            function closeAllSelect(elmnt) {
+                /*a function that will close all select boxes in the document,
+            except the current select box:*/
+                var x,
+                    y,
+                    i,
+                    xl,
+                    yl,
+                    arrNo = [];
+                x = document.getElementsByClassName("select-items");
+                y = document.getElementsByClassName("select-selected");
+                xl = x.length;
+                yl = y.length;
+                for (i = 0; i < yl; i++) {
+                    if (elmnt == y[i]) {
+                        arrNo.push(i);
+                    } else {
+                        y[i].classList.remove("select-arrow-active");
+                    }
+                }
+                for (i = 0; i < xl; i++) {
+                    if (arrNo.indexOf(i)) {
+                        x[i].classList.add("select-hide");
+                    }
+                }
+            }
+            /*if the user clicks anywhere outside the select box,
+        then close all select boxes:*/
+            document.addEventListener("click", closeAllSelect);
+        </script>
+    </body>
+</html>
